@@ -33,23 +33,16 @@
   --fw-500: 500;
   --fw-600: 600;
 
-  /**
-   * spacing
-   */
-
+ 
   --section-padding: 75px;
 
-  /**
-   * shadow
-   */
+  
 
   --shadow-1: 0 6px 15px 0 hsla(0, 0%, 0%, 0.05);
   --shadow-2: 0 10px 30px hsla(0, 0%, 0%, 0.06);
   --shadow-3: 0 10px 50px 0 hsla(220, 53%, 22%, 0.1);
 
-  /**
-   * radius
-   */
+
 
   --radius-pill: 500px;
   --radius-circle: 50%;
@@ -57,9 +50,7 @@
   --radius-5: 5px;
   --radius-10: 10px;
 
-  /**
-   * transition
-   */
+ 
 
   --transition-1: 0.25s ease;
   --transition-2: 0.5s ease;
@@ -71,10 +62,6 @@
 
 
 
-
-/*-----------------------------------*\
-  #RESET
-\*-----------------------------------*/
 
 *,
 *::before,
@@ -142,10 +129,6 @@ body {
 
 
 
-
-/*-----------------------------------*\
-  #REUSED STYLE
-\*-----------------------------------*/
 
  .container { padding-inline: 15px; } 
 
@@ -271,11 +254,6 @@ body {
 
 
 
-
-/*-----------------------------------*\
-  #HEADER
-\*-----------------------------------*/
-
 .header .btn { display: none; }
 .content{
   display: none;
@@ -391,11 +369,6 @@ body {
 
 
 
-
-/*-----------------------------------*\
-  #HERO
-\*-----------------------------------*/
-
 .hero { padding-block-start: calc(var(--section-padding) + 80px); }
 
 .hero .container {
@@ -438,11 +411,6 @@ body {
 }
 
 
-
-
-/*-----------------------------------*\
-  #CATEGORY
-\*-----------------------------------*/
 
 .category .section-subtitle { color: var(--radical-red); }
 
@@ -487,10 +455,6 @@ body {
 
 
 
-
-/*-----------------------------------*\
-  #ABOUT
-\*-----------------------------------*/
 
 .about {
   padding-block-start: 0;
@@ -551,12 +515,6 @@ body {
 }
 
 
-
-
-
-/*-----------------------------------*\
-  #COURSE
-\*-----------------------------------*/
 
 .course { background-color: var(--isabelline); }
 
@@ -673,12 +631,6 @@ body {
 
 
 
-
-
-/*-----------------------------------*\
-  #VIDEO
-\*-----------------------------------*/
-
 .video {
   background-size: contain;
   background-position: center top;
@@ -717,12 +669,6 @@ body {
 
 
 
-
-
-/*-----------------------------------*\
-  #STATS
-\*-----------------------------------*/
-
 .stats-card {
   text-align: center;
   padding: 25px;
@@ -743,12 +689,6 @@ body {
 }
 
 
-
-
-
-/*-----------------------------------*\
-  #BLOG
-\*-----------------------------------*/
 
 .blog-card .card-banner { border-radius: var(--radius-10); }
 
@@ -830,13 +770,6 @@ body {
 }
 
 
-
-
-
-/*-----------------------------------*\
-  #FOOTER
-\*-----------------------------------*/
-
 .footer {
   background-repeat: no-repeat;
   background-color: var(--eerie-black-2);
@@ -907,12 +840,6 @@ body {
 
 
 
-
-
-/*-----------------------------------*\
-  #BACK TO TOP
-\*-----------------------------------*/
-
 .back-top-btn {
   position: fixed;
   bottom: 10%;
@@ -941,19 +868,7 @@ body {
 
 
 
-/*-----------------------------------*\
-  #MEDIA QUERIES
-\*-----------------------------------*/
-
-/**
- * responsive for large than 575px screen
- */
-
 @media (min-width: 575px) {
-
-  /**
-   * REUSED STYLE
-   */
 
   .container {
     max-width: 520px;
@@ -965,45 +880,19 @@ body {
 
   :is(.course, .blog) .grid-list { grid-template-columns: 1fr; }
 
-
-
-  /**
-   * HEADER
-   */
-
   .header .container { max-width: unset; }
 
   .header-actions { gap: 30px; }
 
-
-
-  /**
-   * HERO
-   */
-
   .hero-banner { grid-template-columns: 1fr 0.9fr; }
-
-
-
-  /**
-   * VIDEO
-   */
 
   .video .play-btn { padding: 25px; }
 
 
 
-  /**
-   * STATS
-   */
-
   .stats-card { padding: 40px 30px; }
 
 
-
-  /**
-   * FOOTER
-   */
 
   .footer-brand,
   .footer-list:last-child { grid-column: 1 / 3; }
@@ -1024,32 +913,15 @@ body {
 
 
 
-/**
- * responsive for large than 768px screen
- */
-
 @media (min-width: 768px) {
 
-  /**
-   * CUSTOM PROPERTY
-   */
-
   :root {
-
-    /**
-     * typography
-     */
 
     --fs-1: 4.6rem;
     --fs-2: 3.8rem;
 
   }
 
-
-
-  /**
-   * REUSED STYLE
-   */
 
   .container { max-width: 720px; }
 
@@ -1058,10 +930,6 @@ body {
   :is(.course, .blog) .grid-list { grid-template-columns: 1fr 1fr; }
 
 
-
-  /**
-   * HEADER
-   */
 
   .header .container { padding-inline: 30px; }
 
@@ -1072,10 +940,6 @@ body {
   }
 
 
-
-  /**
-   * HERO
-   */
 
   .hero { padding-block-start: calc(var(--section-padding) + 90px); }
 
@@ -1103,10 +967,6 @@ body {
 
 
 
-  /**
-   * ABOUT
-   */
-
   .about { padding-block-start: 50px; }
 
   .about-banner {
@@ -1131,11 +991,6 @@ body {
   }
 
 
-
-  /**
-   * FOOTER
-   */
-
   .footer-brand,
   .footer-list:last-child { grid-column: auto; }
 
@@ -1146,45 +1001,24 @@ body {
 
 
 
-
-/**
- * responsive for large than 992px screen
- */
-
 @media (min-width: 992px) {
 
-  /**
-   * CUSTOM PROPERTY
-   */
+ 
 
   :root {
 
-    /**
-     * typography
-     */
+   
 
     --fs-1: 5.5rem;
     --fs-2: 4.5rem;
 
   }
 
-
-
-  /**
-   * REUSED STYLE
-   */
-
   .container { max-width: 960px; }
 
   .grid-list { grid-template-columns: repeat(4, 1fr); }
 
   :is(.course, .blog) .grid-list { grid-template-columns: repeat(3, 1fr); }
-
-
-
-  /**
-   * HERO
-   */
 
   .hero .container {
     grid-template-columns: 1fr 1fr;
@@ -1196,34 +1030,16 @@ body {
 
   .hero .btn { margin-inline: 0; }
 
-
-
-  /**
-   * ABOUT
-   */
-
   .about .container {
     grid-template-columns: 1fr 0.6fr;
     align-items: center;
     gap: 60px;
   }
 
-
-
-  /**
-   * VIDEO
-   */
-
   .video-banner {
     max-width: 75%;
     margin-inline: auto;
   }
-
-
-
-  /**
-   * FOOTER
-   */
 
   .footer .grid-list { grid-template-columns: 1fr 0.6fr 0.6fr 1.2fr; }
 
@@ -1231,39 +1047,16 @@ body {
 
 
 
-
-
-/**
- * responsive for large than 1200px screen
- */
-
 @media (min-width: 1200px) {
-
-  /**
-   * CUSTOM PROPERTY
-   */
 
   :root {
 
-    /**
-     * typography
-     */
-
     --fs-1: 6.5rem;
-
-    /**
-     * spacing
-     */
 
     --section-padding: 120px;
 
   }
 
-
-
-  /**
-   * REUSED STYLE
-   */
 
   .container { max-width: 1185px; }
 
@@ -1274,10 +1067,6 @@ body {
   .blog { position: relative; }
 
 
-
-  /**
-   * HEADER
-   */
 
   .header-action-btn:last-child,
   .navbar .wrapper,
@@ -1312,11 +1101,6 @@ body {
   .header .btn { margin-inline-end: 0; }
 
 
-
-  /**
-   * HERO
-   */
-
   .hero { padding-block-start: calc(var(--section-padding) + 120px); }
 
   .hero .container { gap: 80px; }
@@ -1326,11 +1110,6 @@ body {
     z-index: -1;
   }
 
-
-
-  /**
-   * ABOUT
-   */
 
   .about .container { gap: 110px; }
 
@@ -1350,12 +1129,6 @@ body {
     z-index: -1;
   }
 
-
-
-  /**
-   * VIDEO
-   */
-
   .video-shape-1 {
     top: -50px; 
      left: 0;
@@ -1367,11 +1140,6 @@ body {
     z-index: 1;
   }
 
-
-
-  /**
-   * BLOG
-   */
 
   .blog-shape {
     top: 0;
